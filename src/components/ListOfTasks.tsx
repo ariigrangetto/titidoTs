@@ -13,7 +13,7 @@ export function WithTasks({ task }: Props) {
     <ul>
       {task.map((item) => (
         <li key={item.id}>
-          {item.text}
+          <p className='bg-red'>{item.text}</p>
           <button onClick={() => removeTask(item.id)}>
             <CircleX />
           </button>

@@ -27,7 +27,7 @@ function App() {
   return (
     <>
       <main className='app'>
-        <h1>Titido</h1>
+        <h1 className=''>Titido</h1>
         <h2>Organiza tus tareas con nosotros</h2>
         <Filter />
 
