@@ -3,10 +3,15 @@ import "./App.css";
 import ListOfTasks from "./components/ListOfTasks";
 import { Task } from "./types";
 import useContextTask from "./hooks/useContextTask";
+import Filter from "./components/Filter";
+import { useFilter } from "./hooks/useFilter";
 
 function App() {
   const [text, setText] = useState<string>("");
   const { tasks, addTask } = useContextTask();
+  const { filterTask } = useFilter();
+
+  const filteredTask = filterTask(tasks);
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
     const newText = e.target.value;
@@ -21,9 +26,10 @@ function App() {
 
   return (
     <>
-      <main>
+      <main className='app'>
         <h1>Titido</h1>
         <h2>Organiza tus tareas con nosotros</h2>
+        <Filter />
 
         <form onSubmit={handleSubmit}>
           <input
@@ -35,7 +41,7 @@ function App() {
           <button type='submit'>Add</button>
         </form>
 
-        <ListOfTasks task={tasks} />
+        <ListOfTasks task={filteredTask} />
       </main>
     </>
   );
