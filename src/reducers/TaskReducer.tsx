@@ -1,4 +1,4 @@
-import { Task } from "../types";
+import type { Task } from "../types";
 
 export const initialState: Task[] = JSON.parse(
   window.localStorage.getItem("task") || "[]"

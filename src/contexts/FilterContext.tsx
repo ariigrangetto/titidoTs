@@ -1,5 +1,5 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { createContext, useState } from "react";
-import React from "react";
 import type { Task } from "../types";
 
 type FilterState = {

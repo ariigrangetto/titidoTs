@@ -1,6 +1,5 @@
 import TaskReducer, { initialState } from "../reducers/TaskReducer";
-import { Task } from "../types";
-import React from "react";
+import type { Task } from "../types";
 import { useReducer } from "react";
 
 export function useTaskActions() {

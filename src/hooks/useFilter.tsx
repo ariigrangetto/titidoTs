@@ -1,6 +1,4 @@
 import { useContext } from "react";
-import type { Task } from "../types";
-import React from "react";
 import { FilterContext } from "../contexts/FilterContext";
 
 export function useFilter() {

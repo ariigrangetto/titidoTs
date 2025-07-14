@@ -1,7 +1,7 @@
-import React from "react";
-import { Task } from "../types";
+/* eslint-disable react/react-in-jsx-scope */
 import useContextTask from "../hooks/useContextTask";
 import { CircleX } from "lucide-react";
+import type { Task } from "../types";
 
 type Props = {
   task: Task[];

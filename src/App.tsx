@@ -1,7 +1,7 @@
-import React, { useState } from "react";
+/* eslint-disable react/react-in-jsx-scope */
+import { useState } from "react";
 import "./App.css";
 import ListOfTasks from "./components/ListOfTasks";
-import { Task } from "./types";
 import useContextTask from "./hooks/useContextTask";
 import Filter from "./components/Filter";
 import { useFilter } from "./hooks/useFilter";

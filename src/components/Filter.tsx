@@ -1,9 +1,10 @@
-import React, { useId } from "react";
+/* eslint-disable react/react-in-jsx-scope */
+import { useId } from "react";
 import { useFilter } from "../hooks/useFilter";
 
 export default function Filter() {
   const labelId = useId();
-  const { filter, setFilter } = useFilter();
+  const { setFilter } = useFilter();
 
   function handleChange(e: React.ChangeEvent<HTMLSelectElement>) {
     const value = e.target.value;

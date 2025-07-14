@@ -1,6 +1,7 @@
-import React, { createContext } from "react";
+/* eslint-disable react/react-in-jsx-scope */
+import { createContext } from "react";
 import { useTaskActions } from "../hooks/useTaskAction";
-import { Task } from "../types";
+import type { Task } from "../types";
 
 interface TaskProviderType {
   tasks: Task[];
