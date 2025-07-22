@@ -16,7 +16,7 @@ export default function Filter() {
 
   return (
     <>
-      <div className='mt-12'>
+      <div className='mt-3'>
         <label className='' htmlFor={labelId}>
           Filter task by pending or complete
         </label>
@@ -33,18 +33,3 @@ export default function Filter() {
     </>
   );
 }
-
-//uso el prevState para que no se sobreescriba la propieda del objeto
-//es para asegurar que solo se cambie esa parte
-
-//si tuviera un objeto como
-// const [filter, setFilter] = useState({
-// completed: "all",
-// priority: "high"
-// });
-
-// si no uso el prevState, queda:
-//{ copleted: "completed"} y se pierde la propiedad priority
-
-// si uso el prevState, queda;
-//  { completed: "completed", priority: "high" } y solo modifica la propiedad completed que es la que cambio
