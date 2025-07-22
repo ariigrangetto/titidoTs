@@ -9,23 +9,19 @@ An app built with React to organize tasks, with filters for completed and uncomp
 - `Tailwind`
 - `useReducer`
 - `useContext`
-- `useId` 
+- `useId`
 
 ## 🧠 The Process
 
 The purpose of this app was to deepening my knowledge in typescript. The main steps included creating an input field to add new tasks, displaying them with filtering options (`completed` / `not completed`), and enabling users to delete tasks.  
 Each task is persisted using `localStorage`.
 
-
 ## 🎆 How to improve:
-- reset tasks.
+
 - edit tasks.
-- count task (pending and complete ones).
 - sort by date.
 - add tickets for each ones and filter by them.
-- testing
 
+## 🌆 Preview
 
-
-## 🌆 Preview 
 ![847shots_so](https://github.com/user-attachments/assets/5ed86649-0e27-4065-aa44-770fc3f35386)
